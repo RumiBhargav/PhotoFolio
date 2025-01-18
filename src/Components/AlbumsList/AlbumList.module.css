@@ -1,0 +1,219 @@
+.loader {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.top h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.top button {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #fff;
+  background-color:  rgb(0, 119, 255);
+  /* border: 2px solid; */
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.top .active {
+  color: #fff;
+  background-color:  rgb(255, 19, 0);
+  /* border: 2px solid; */
+}
+
+.albumsList {
+  display: grid;
+  grid-template: repeat(1, 180px) / repeat(auto-fit, minmax(180px, 0.5fr));
+  grid-auto-flow: row;
+  grid-auto-rows: 180px;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.album {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #eeeeee;
+  margin-block: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: border-color 0.3s;
+  background: #eeeeee;
+  
+}
+
+.album span {
+  justify-self: baseline;
+  width: 100%;
+  text-align: center;
+  padding-block: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  /* background-color: #eeeeee; */
+  transition: 0.3s;
+}
+
+.album img {
+  width: 50px;
+  margin-bottom: 30px;
+}
+
+.album:hover {
+  /* border-color: #0077ff; */
+  border-color: pink;
+  
+}
+.album:hover span, .album:hover  .btnContainer{
+  /* background-color: #0077ff; */
+  background-color:pink;
+  visibility: inherit;
+}
+
+.btnContainer{
+  display:grid;
+  width: 100%;
+  /* place-items: center; */
+  grid-template-columns: repeat(2,1fr);
+  /* padding: 5px 10px ; */
+  gap: 10px;
+  /* background: #eeeeee; */
+  visibility: hidden;
+
+}
+.imgContainer{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer button{
+ height: 30px;
+  padding: 5px  10px;
+ border:none;
+  outline: none;
+  border-radius: 5px;
+/* background-color: red; */
+
+background-color: transparent;
+ color: black;
+ cursor: pointer;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.btnContainer button:nth-child(2){
+ color: black;
+  
+}
+.btnContainer button:hover{
+  background-color: red;
+  color: white;
+ 
+}
+.btnContainer button:nth-child(2):hover{
+  background-color: blue;
+  color: white;
+ 
+}
+/* .loader {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .top h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  
+  .top button {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgb(0, 119, 255);
+    background-color: rgba(0, 119, 255, 0.1);
+    border: 2px solid rgb(0, 119, 255);
+    cursor: pointer;
+  }
+  .top .active {
+    color: rgb(255, 19, 0);
+    background-color: rgba(255, 19, 0, 0.1);
+    border: 2px solid rgb(255, 19, 0);
+  }
+  
+  .albumsList {
+    display: grid;
+    grid-template: repeat(1, 150px) / repeat(auto-fit, minmax(150px, 0.5fr));
+    grid-auto-flow: row;
+    grid-auto-rows: 150px;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .album {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #eeeeee;
+    margin-block: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: border-color 0.3s;
+  }
+  
+  .album span {
+    justify-self: baseline;
+    width: 100%;
+    text-align: center;
+    padding-block: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: #eeeeee;
+    transition: 0.3s;
+  }
+  
+  .album img {
+    width: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .album:hover {
+    border-color: #0077ff;
+    color: #fff;
+  }
+  .album:hover span {
+    background-color: #0077ff;
+  }
+   */

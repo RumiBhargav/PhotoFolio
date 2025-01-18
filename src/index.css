@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #86A788;
+    background-image:url(https://img.freepik.com/premium-photo/bouquet-fresh-red-pink-rose-flowers_264437-1486.jpg?ga=GA1.1.248075922.1724820068&semt=ais_hybrid) ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
