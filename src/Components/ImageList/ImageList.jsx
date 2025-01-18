@@ -57,12 +57,20 @@ const ImageList = ({ album, handleBack }) => {
   // }
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
+   // const nextIndex = currentIndex + 1;
+    //if(currentIndex >=images.length);{
+     // alert("no images left");
+    // }
     const nextIndex = (currentIndex + 1) % images.length; // 1%4==1 // 2%4==2 // 3%4==3 4%4==0
     setCurrentIndex(nextIndex);
     setViewImage(images[nextIndex]);
   };
 
   const handlePrevious = () => {
+    // const nextIndex = currentIndex - 1;
+    //if(currentIndex < 0 );{
+     // alert("no images left");
+    // }
     const prevIndex = (currentIndex - 1 + images.length) % images.length; // 3+4%4==3 //2%4==2// 1%4==1// 
                                                                            // (0-1+4)%4==3
     setCurrentIndex(prevIndex);

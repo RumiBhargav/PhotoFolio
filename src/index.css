@@ -11,5 +11,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+   
     
 }
+body::-webkit-scrollbar {
+   display: none;       
+} 
+/* display: none;    hide the scroll bar     */   
